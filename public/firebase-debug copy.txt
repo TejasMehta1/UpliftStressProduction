@@ -1,0 +1,106 @@
+[debug] [2018-11-05T01:40:20.362Z] ----------------------------------------------------------------------
+[debug] [2018-11-05T01:40:20.364Z] Command:       /Users/tejasmehta/.nvm/versions/node/v10.1.0/bin/node /Users/tejasmehta/.nvm/versions/node/v10.1.0/bin/firebase deploy
+[debug] [2018-11-05T01:40:20.365Z] CLI Version:   3.18.4
+[debug] [2018-11-05T01:40:20.365Z] Platform:      darwin
+[debug] [2018-11-05T01:40:20.365Z] Node Version:  v10.1.0
+[debug] [2018-11-05T01:40:20.366Z] Time:          Sun Nov 04 2018 19:40:20 GMT-0600 (CST)
+[debug] [2018-11-05T01:40:20.366Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-11-05T01:40:20.386Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-05T01:40:20.386Z] > authorizing via signed-in user
+[debug] [2018-11-05T01:40:20.389Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/stressv3-d1fcf  
+  
+ Sun Nov 04 2018 19:40:20 GMT-0600 (CST)
+[debug] [2018-11-05T01:40:20.805Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-05T01:40:20.807Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/stressv3-d1fcf/tokens  
+  
+ Sun Nov 04 2018 19:40:20 GMT-0600 (CST)
+[debug] [2018-11-05T01:40:21.020Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'stressv3-d1fcf'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-11-05T01:40:21.197Z] >>> HTTP REQUEST PUT https://stressv3-d1fcf.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+ 
+ Sun Nov 04 2018 19:40:21 GMT-0600 (CST)
+[debug] [2018-11-05T01:40:21.356Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database stressv3-d1fcf is valid
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-11-05T01:40:22.782Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/stressv3-d1fcf/uploads/-LQWWm2W1i8c-wT7ylqo?fileCount=21&message=  
+  
+ Sun Nov 04 2018 19:40:22 GMT-0600 (CST)
+[debug] [2018-11-05T01:40:28.510Z] <<< HTTP RESPONSE 410
+[debug] [2018-11-05T01:40:28.510Z] <<< HTTP RESPONSE BODY undefined
+[debug] [2018-11-05T01:40:28.512Z] TypeError: Cannot read property 'error' of undefined
+    at module.exports (/Users/tejasmehta/.nvm/versions/node/v10.1.0/lib/node_modules/firebase-tools/lib/responseToError.js:10:13)
+    at Request._callback (/Users/tejasmehta/.nvm/versions/node/v10.1.0/lib/node_modules/firebase-tools/lib/api.js:47:25)
+    at Request.self.callback (/Users/tejasmehta/.nvm/versions/node/v10.1.0/lib/node_modules/firebase-tools/node_modules/request/request.js:186:22)
+    at Request.emit (events.js:182:13)
+    at Request.EventEmitter.emit (domain.js:442:20)
+    at Request.<anonymous> (/Users/tejasmehta/.nvm/versions/node/v10.1.0/lib/node_modules/firebase-tools/node_modules/request/request.js:1163:10)
+    at Request.emit (events.js:182:13)
+    at Request.EventEmitter.emit (domain.js:442:20)
+    at IncomingMessage.<anonymous> (/Users/tejasmehta/.nvm/versions/node/v10.1.0/lib/node_modules/firebase-tools/node_modules/request/request.js:1085:12)
+    at Object.onceWrapper (events.js:273:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-11-05T01:40:40.686Z] ----------------------------------------------------------------------
+[debug] [2018-11-05T01:40:40.689Z] Command:       /Users/tejasmehta/.nvm/versions/node/v10.1.0/bin/node /Users/tejasmehta/.nvm/versions/node/v10.1.0/bin/firebase deploy --debug
+[debug] [2018-11-05T01:40:40.690Z] CLI Version:   3.18.4
+[debug] [2018-11-05T01:40:40.690Z] Platform:      darwin
+[debug] [2018-11-05T01:40:40.690Z] Node Version:  v10.1.0
+[debug] [2018-11-05T01:40:40.691Z] Time:          Sun Nov 04 2018 19:40:40 GMT-0600 (CST)
+[debug] [2018-11-05T01:40:40.691Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-11-05T01:40:40.708Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-05T01:40:40.708Z] > authorizing via signed-in user
+[debug] [2018-11-05T01:40:40.710Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/stressv3-d1fcf  
+  
+ Sun Nov 04 2018 19:40:40 GMT-0600 (CST)
+[debug] [2018-11-05T01:40:40.984Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-05T01:40:40.985Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/stressv3-d1fcf/tokens  
+  
+ Sun Nov 04 2018 19:40:40 GMT-0600 (CST)
+[debug] [2018-11-05T01:40:41.208Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'stressv3-d1fcf'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-11-05T01:40:41.414Z] >>> HTTP REQUEST PUT https://stressv3-d1fcf.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+ 
+ Sun Nov 04 2018 19:40:41 GMT-0600 (CST)
+[debug] [2018-11-05T01:40:41.903Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database stressv3-d1fcf is valid
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-11-05T01:40:43.832Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/stressv3-d1fcf/uploads/-LQWWr3ZlYFoq8g8nl6s?fileCount=21&message=  
+  
+ Sun Nov 04 2018 19:40:43 GMT-0600 (CST)
+[debug] [2018-11-05T01:41:02.309Z] <<< HTTP RESPONSE 410
+[debug] [2018-11-05T01:41:02.310Z] <<< HTTP RESPONSE BODY undefined
+[debug] [2018-11-05T01:41:02.311Z] TypeError: Cannot read property 'error' of undefined
+    at module.exports (/Users/tejasmehta/.nvm/versions/node/v10.1.0/lib/node_modules/firebase-tools/lib/responseToError.js:10:13)
+    at Request._callback (/Users/tejasmehta/.nvm/versions/node/v10.1.0/lib/node_modules/firebase-tools/lib/api.js:47:25)
+    at Request.self.callback (/Users/tejasmehta/.nvm/versions/node/v10.1.0/lib/node_modules/firebase-tools/node_modules/request/request.js:186:22)
+    at Request.emit (events.js:182:13)
+    at Request.EventEmitter.emit (domain.js:442:20)
+    at Request.<anonymous> (/Users/tejasmehta/.nvm/versions/node/v10.1.0/lib/node_modules/firebase-tools/node_modules/request/request.js:1163:10)
+    at Request.emit (events.js:182:13)
+    at Request.EventEmitter.emit (domain.js:442:20)
+    at IncomingMessage.<anonymous> (/Users/tejasmehta/.nvm/versions/node/v10.1.0/lib/node_modules/firebase-tools/node_modules/request/request.js:1085:12)
+    at Object.onceWrapper (events.js:273:13)
+[error] 
+[error] Error: An unexpected error has occurred.

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="/images/UpliftStressLogo.png"/>
+  <meta charset ="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Update Profile</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="css/custom.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Dosis|Exo+2|Varela+Round" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+
+  <!-- Firebase Reference -->
+ <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+
+<!-- Moment.js Reference -->
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+<body>
+<!--Train tracker-->
+<div class ="container">
+<!--Jumbotron-->
+<!--<div class ="jumbotron">
+  <h1 class="text-center">Train Schedule</h1>
+  <h3 class="text-center ride"></h3>
+
+</div>-->
+<!--<div class="row">
+    <div class="col-lg-12">-->
+    <!--Current Train Schedule-->
+  <!--  <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title current"><strong>Current Train Schedule</strong></h3>
+        </div>
+        <div class="panel-body">
+          <table class="table table-hover" id='trainTable'>
+            <thead>
+              <tr>
+                <th>Train Name</th>
+                <th>Destination</th>
+                <th>Next Arrival</th>
+                <th>Frequency(minutes)</th>
+                <th>Minutes Away</th>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+-->
+      <!-- Add Trains  -->
+      <br>
+      <div class="panel">
+        <div class="panel-heading" style="text-align: center;">
+          <h3 class="panel-title add" style="font-size: 3em"><strong>Update Profile</strong></h3>
+        </div>
+        <div class="panel-body">
+          <h1>Welcome <span id="welcome"></span>!</h1>
+        <!-- Entry Form -->
+        <form>
+          <div class="form-group">
+            <label for="">Name</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+
+          <div class="form-group">
+            <label for="">Profile Picture URL</label>
+            <img id="img" style="width:20%"> </img>;
+            <input type="text" class="form-control" id="url">
+          </div>
+
+          <div class="form-group">
+            <label for="">Age</label>
+            <br>
+            <input type="number" class="form-control" id="age">
+          </div>
+
+          <div class="form-group">
+            <label for="">Subject Of Expertise #1</label><br>
+            <select id="expertise" name="expertise">
+      <option value="Academics">Academics</option>
+      <option value="Romance">Romance</option>
+      <option value="Family">Family</option>
+      <option value="Finances">Finances</option>
+      <option value="Insecurity">Insecurity</option>
+      <option value="Career">Career</option>
+      <option value="Illness">Illness</option>
+      <option value="Other">Other</option>
+    </select>
+          </div>
+
+          <div class="form-group">
+            <label for="">Subject Of Expertise #2</label><br>
+            <select id="expertise2" name="expertise">
+      <option value="Academics">Academics</option>
+      <option value="Romance">Romance</option>
+      <option value="Family">Family</option>
+      <option value="Finances">Finances</option>
+      <option value="Insecurity">Insecurity</option>
+      <option value="Career">Career</option>
+      <option value="Illness">Illness</option>
+      <option value="Other">Other</option>
+    </select>
+          </div>
+
+          <div class="form-group">
+            <label for="">Subject Of Expertise #3</label><br>
+            <select id="expertise3" name="expertise">
+      <option value="Academics">Academics</option>
+      <option value="Romance">Romance</option>
+      <option value="Family">Family</option>
+      <option value="Finances">Finances</option>
+      <option value="Insecurity">Insecurity</option>
+      <option value="Career">Career</option>
+      <option value="Illness">Illness</option>
+      <option value="Other">Other</option>
+    </select>
+          </div>
+
+          <div class="form-group">
+            <label for="">Type of Counselor</label>
+            <p>(Must be a practicing psychiatrist or psychologist to be "Professional")</p>
+            <select id="type" name="type">
+      <option value="Personal">Personal</option>
+      <option value="Professional">Professional</option>
+    </select>
+          </div>
+            <div class="form-group">
+              <label for="">Zipcode</label>
+              <input type="number" class="form-control" id="zip">
+            </div>
+            <div class="form-group">
+              <label for="">Contact Email</label>
+              <input type="text" class="form-control" id="phoneNumber">
+            <br>
+          </div>
+
+          <div class="form-group">
+            <label for="">Bio</label>
+            <input type="text" class="form-control" id="bio">
+          </div>
+          <button href="index.html" class="btn btn-primary" onclick="update()" id="submit-button"style = "display: block; margin: 0 auto; width: 40%; padding: 1em 2em;">Submit</button>
+            <br>
+            <a href="index.html" class="btn btn-primary btn-lg">Go back Home</a>
+          </div>
+        </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Javascript -->
+<script src='javascript.js'></script>
+</body>
+</html>
